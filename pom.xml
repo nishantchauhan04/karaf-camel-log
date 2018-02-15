@@ -22,7 +22,7 @@
 
   <groupId>io.fabric8.quickstarts</groupId>
   <artifactId>karaf-camel-log</artifactId>
-  <version>1.0.0.fuse-000018</version>
+  <version>1.0.0.fuse-000018-redhat-1</version>
   <packaging>bundle</packaging>
   <name>Fabric8 :: Quickstarts :: Karaf :: Camel Log</name>
   <description>A simple Camel route in Karaf container</description>
