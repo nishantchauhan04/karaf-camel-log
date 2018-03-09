@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<!--
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
 
      Copyright 2005-2016 Red Hat, Inc.
 
@@ -15,8 +14,7 @@
      implied.  See the License for the specific language governing
      permissions and limitations under the License.
 
--->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="              http://maven.apache.org/POM/4.0.0              http://maven.apache.org/maven-v4_0_0.xsd">
+--><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="              http://maven.apache.org/POM/4.0.0              http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -33,13 +31,13 @@
     <!-- configure the versions you want to use here -->
     <camel.version>2.19.1</camel.version>
     <karaf.version>4.0.8</karaf.version>
-    <fabric8.version>2.3.2</fabric8.version>
+    <fabric8.version>2.3.7</fabric8.version>
 
     <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
     <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
     <maven-bundle-plugin.version>2.3.7</maven-bundle-plugin.version>
     <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
-    <fabric8.maven.plugin.version>3.5.17</fabric8.maven.plugin.version>
+    <fabric8.maven.plugin.version>3.5.28</fabric8.maven.plugin.version>
   </properties>
 
   <dependencyManagement>
@@ -225,6 +223,16 @@
             </goals>
           </execution>
         </executions>
+      
+        <configuration>
+          <resources>
+            <labels>
+              <all>
+                <space>abcdf</space>
+              </all>
+            </labels>
+          </resources>
+        </configuration>
       </plugin>
     </plugins>
   </build>
